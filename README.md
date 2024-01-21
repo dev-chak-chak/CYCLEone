@@ -1,10 +1,29 @@
-# Description 
+# CYCLEone 
 CYCLEone is a Scenario Engine. It is an open-source, cross-platform tool for end-to-end validation and verification of autonomous driving solutions. We made it to be flexible, middleware and data source-agnostic for efficient development of safe autonomous driving systems.
 
 # Issues to be solved
 Ususally a software team has some production code to be tested; a simulation tool to emulate inputs to the code modules and to consume output(s); and some delivery/testing pipelines to execute tests periodically and automatically. CYCLEone is a simple-to-use scenario engine, that could effectively utilize all available computation power to execute test scenarios and check whether a module-under-test fullfills provided requirements.
 
+# Features 
+* Variaty of data sources
+  Use ROS bags, Cyber records, real-scale data
+* Variaty of metrics
+  Use your own metrics evaluation tool
+* Variaty of simulation tools
+* Autonomous driving platform-agnostic
+* Flexibility
+* Cross-platform
+  Use it on Mac, Linux or Windows
+* Easy to extend
+  Contains tests scenarios that can be complimented by your own.   
+
+# Installation 
+TO DO
+
 # Usage
+
+TO DO
+
 ## service notes
 
 ```
@@ -48,11 +67,15 @@ $ python3 -m pip install --user virtualenv --force-reinstall
 ```
 
 # Road map
-21.01.2024 - Release 
+TO DO
+
 
 ## Help wanted:
 * Windows integration
 * Cmake review
 * Extension of scenarios data base
 
+# License 
+
+Apache 2.0 license 
 
