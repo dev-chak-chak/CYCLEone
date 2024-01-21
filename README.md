@@ -1,6 +1,9 @@
 # CYCLEone 
 CYCLEone is a Scenario Engine. It is an open-source, cross-platform tool for end-to-end validation and verification of autonomous driving solutions. We made it to be flexible, middleware and data source-agnostic for efficient development of safe autonomous driving systems.
 
+# Motivation 
+We believe that the autonomous driving industry benefits from a diverse range of players co-creating value and collaborating to enhance safety and reliability. Multiple perspectives and expertise contribute to robust solutions, fostering innovation and addressing challenges collectively. Collaboration enables shared data, approaches, tools, and resources, creating a more comprehensive understanding of complex driving scenarios. With a multitude of players, the industry can iterate faster, uncovering pitfalls and refining technologies to ensure safer autonomous systems for widespread adoption.
+
 # Issues to be solved
 Ususally a software team has some production code to be tested; a simulation tool to emulate inputs to the code modules and to consume output(s); and some delivery/testing pipelines to execute tests periodically and automatically. CYCLEone is a simple-to-use scenario engine, that could effectively utilize all available computation power to execute test scenarios and check whether a module-under-test fullfills provided requirements.
 
@@ -14,16 +17,10 @@ Ususally a software team has some production code to be tested; a simulation too
 * Flexibility
 * Cross-platform
   Use it on Mac, Linux or Windows
-* Easy to extend
-  Contains tests scenarios that can be complimented by your own.   
+* Open and extensible
+  Contains basic scenarios that can be complimented by your own: basic scenarios -> scenario database -> edge case database 
 
-# Installation 
-TO DO
-
-# Usage
-
-TO DO
-
+# CYCLEOne Overview
 ## service notes
 
 ```
@@ -65,6 +62,15 @@ $ python3 -m pip install --user virtualenv --force-reinstall
 ~/cycle_on$ docker run --name cycleon_ci -it -v ${PWD}:/cycleon --rm cycleon/ci:0.1
 ~/cycle_on$ docker container exec -it cycleon_ci bash
 ```
+
+
+# Installation 
+TO DO
+
+# Usage
+
+TO DO
+
 
 # Road map
 TO DO
