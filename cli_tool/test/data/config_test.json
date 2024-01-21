@@ -1,0 +1,27 @@
+{
+    "network": {
+        "address": "localhost",
+        "port": 8181
+    },
+    "action": {
+        "modules": [
+            {
+                "command": "launch",
+                "parameters": [
+                    "core",
+                    "par1",
+                    "par2"
+                ]
+            }
+        ],
+        "simulators": [
+            {
+                "command": "sim",
+                "parameters": [
+                    "par3",
+                    "par4"
+                ]
+            }
+        ]
+    }
+}

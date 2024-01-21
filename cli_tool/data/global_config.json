@@ -1,0 +1,41 @@
+{
+    "network": {
+        "address": "localhost",
+        "port": 8181
+    },
+    "action": {
+        "modules": [
+            {
+                "command": "ros2",
+                "parameters": [
+                    "launch",
+                    "carla_autoware_bridge",
+                    "carla_autoware_demo.launch.py",
+                    "port:=3000",
+                    "timeout:=5"
+                ]
+            },
+            {
+                "command": "ros2",
+                "parameters": [
+                    "launch",
+                    "carla_launch",
+                    "e2e_simulator.launch.xml",
+                    "map_path:=/home/robo/autoware_map/carla-town-1",
+                    "vehicle_model:=carla_tesla_model3",
+                    "sensor_model:=sample_sensor_kit"
+                ]
+            }
+        ],
+        "simulators": [
+            {
+                "command": "/home/robo/CARLA_0.9.12/CarlaUE4.sh",
+                "parameters": [
+                    "-prefernvidia",
+                    "-carla-rpc-port=3000",
+                    "-quality-level=Low"
+                ]
+            }
+        ]
+    }
+}
