@@ -18,6 +18,10 @@ Ususally a software team has some production code to be tested; a simulation too
 * Variaty of simulation tools
 * Autonomous driving platform-agnostic
 * Flexibility
+* Standardized Interface
+Eenable the consistent use of test cases and scenarios across different test instances and test environments throughout the
+development process and within homologation processes.
+  
 * Cross-platform
   Use it on Mac, Linux or Windows
 * Open and extensible
@@ -78,7 +82,6 @@ TO DO
 # Road map
 TO DO
 
-
 ## Help wanted:
 * Windows integration
 * Cmake review
@@ -86,5 +89,4 @@ TO DO
 
 # License 
 
-Apache 2.0 license 
-
+CYCLEone is licensed under the Apache License, See also ![LICENSE][LICENSE]
