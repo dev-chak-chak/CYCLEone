@@ -82,4 +82,4 @@ TO DO
 
 # License 
 
-CYCLEone is licensed under the Apache License, See also ![LICENSE](LICENSE)
+CYCLEone is licensed under the MIT License. 
