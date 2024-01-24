@@ -1,30 +1,23 @@
 # CYCLEone 
-CYCLEone is a Scenario Engine. It is an open-source, cross-platform tool for end-to-end validation and verification of autonomous driving solutions. We made it to be flexible, middleware and data source-agnostic for efficient development of safe autonomous driving systems.
+CYCLEone is a Scenario Engine. It is an open-source, cross-platform tool for end-to-end validation and verification of autonomous driving solutions. We made it to be flexible, middleware and data source-agnostic for efficient development of robust autonomous driving systems.
 
 # CYCLEone Blueprint
 ![CYCLEone Blueprint](CYCLEone.png)
 
-# Motivation 
-We believe that the autonomous driving industry benefits from a diverse range of players co-creating value and collaborating to enhance safety and reliability. Multiple perspectives and expertise contribute to robust solutions, fostering innovation and addressing challenges collectively. Collaboration enables shared data, approaches, tools, and resources, creating a more comprehensive understanding of complex driving scenarios. With a multitude of players, the industry can iterate faster, uncovering pitfalls and refining technologies to ensure safer autonomous systems for widespread adoption.
-
-# Issues to be solved
+# Use Case
 Ususally a software team has some production code to be tested; a simulation tool to emulate inputs to the code modules and to consume output(s); and some delivery/testing pipelines to execute tests periodically and automatically. CYCLEone is a simple-to-use scenario engine, that could effectively utilize all available computation power to execute test scenarios and check whether a module-under-test fullfills provided requirements.
 
 # Features 
 * Variaty of data sources
   Use ROS bags, Cyber records, real-scale data
-* Variaty of metrics
-  Use your own metrics evaluation tool
-* Variaty of simulation tools
-* Autonomous driving platform-agnostic
+* Independent of autonomous driving platform in use
 * Flexibility
+  Use your own metrics evaluation tool, scneraio test approach: SIL/HIL/Simulator, etc. 
 * Standardized Interface
-Eenable the consistent use of test cases and scenarios across different test instances and test environments throughout the
-development process and within homologation processes.
-  
+  Enable the consistent use of test cases and scenarios across different test instances and test environments throughout the development process and within homologation processes.
 * Cross-platform
-  Use it on Mac, Linux or Windows
-* Open and extensible
+ Mac, Linux, Windows
+* Open-source and extensible
   Contains basic scenarios that can be complimented by your own: basic scenarios -> scenario database -> edge case database 
 
 # CYCLEOne Overview
@@ -89,4 +82,4 @@ TO DO
 
 # License 
 
-CYCLEone is licensed under the Apache License, See also ![LICENSE][LICENSE]
+CYCLEone is licensed under the Apache License, See also ![LICENSE](LICENSE)
