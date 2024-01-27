@@ -32,4 +32,11 @@ jobs:
           cd build_gtest
           ctest
         working-directory: ${{ github.workspace }}
+      
+      - name: Publish Test Results
+        if: always() 
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: ${{ github.workspace }}/Testing/Temporary/LastTest.log
     
