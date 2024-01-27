@@ -23,7 +23,7 @@ jobs:
         run: |
           mkdir build_gtest
           cd build_gtest
-          cmake ../service/test
+          cmake ../service
           make
         working-directory: ${{ github.workspace }}
     
