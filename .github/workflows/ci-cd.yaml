@@ -26,4 +26,10 @@ jobs:
           cmake ../service
           make
         working-directory: ${{ github.workspace }}
+      
+      - name: Run Tests
+        run: |
+          cd build_gtest
+          ctest
+        working-directory: ${{ github.workspace }}
     
