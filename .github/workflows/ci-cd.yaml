@@ -13,13 +13,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set up C++ environment
-        uses: actions/setup-cpp
-        with:
-          cpp-version: '14' 
+      #- name: Set up C++ environment
+       # uses: actions/setup-cpp@v2
+        # with:
+          # cpp-version: '14' 
 
       - name: Install CMake
-        run: sudo apt-get install cmake
+        run: sudo apt-get install -y g++ cmake
 
       - name: Build GoogleTest
         run: |
