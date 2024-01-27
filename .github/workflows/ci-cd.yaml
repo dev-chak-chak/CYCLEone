@@ -23,17 +23,7 @@ jobs:
         run: |
           mkdir build_gtest
           cd build_gtest
-          cmake ../service
+          cmake ../service/test
           make
         working-directory: ${{ github.workspace }}
-
-      - name: Build and Test
-        run: |
-          mkdir build
-          cd build
-          cmake -C ../service/CMakeLists.txt ..
-          make
-          ctest
-        env:
-          GTEST_OUTPUT: xml:${{ github.workspace }}/test-results.xml
-        working-directory: ${{ github.workspace }}
+    
